@@ -1,0 +1,13 @@
+praw
+requests
+pymongo
+pandas
+python-dateutil
+vaderSentiment
+python-dotenv
+fastapi
+uvicorn[standard]
+pymongo
+python-dotenv
+pandas
+python-dateutil
