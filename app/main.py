@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.routes import router as api_router
+from app.api.routes import router as sentiment_timeseries_router
 
 app = FastAPI(title="Crypto Sentiment API")
 
@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # Include routes
-app.include_router(api_router)
+app.include_router(sentiment_timeseries_router)
 
 @app.get("/")
 def home():
